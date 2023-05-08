@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  	<h1>Calculator</h1>
+    <div class="calculator">
+      <div class="screen">
+        <!-- <div id="history"></div> -->
+        <input type="text" id="history" readonly>
+        <input type="text" id="result" readonly>
+      </div>
+      <div class="button-row">
+        <button class="button-orange" onclick="clearScreen()"><b>C</b></button>
+        <button class="button-orange" onclick="deleteChar()"><b>del</b></button>
+        <button class="button-orange" onclick="insertValue('(')"><b>(</b></button>
+        <button class="button-orange" onclick="insertValue(')')"><b>)</b></button>
+        <button class="button-orange" onclick="insertValue('ans')"><b>ans</b></button>
+      </div>
+      <div class="button-row">
+        <button class="button-gray" onclick="insertValue('7')"><b>7</b></button>
+        <button class="button-gray" onclick="insertValue('8')"><b>8</b></button>
+        <button class="button-gray" onclick="insertValue('9')"><b>9</b></button>
+        <button class="button-orange" onclick="insertValue('%')"><b>%</b></button>
+        <button class="button-orange" onclick="insertValue('Math.sqrt(')"><b>√</b></button>
+      </div>
+      <div class="button-row">
+        <button class="button-gray" onclick="insertValue('4')"><b>4</b></button>
+        <button class="button-gray" onclick="insertValue('5')"><b>5</b></button>
+        <button class="button-gray" onclick="insertValue('6')"><b>6</b></button>
+        <button class="button-orange" onclick="insertValue('*')"><b>×</b></button>
+        <button class="button-orange" onclick="insertValue('/')"><b>÷</b></button>
+        
+      </div>
+      <div class="button-row">
+        <button class="button-gray" onclick="insertValue('1')"><b>1</b></button>
+        <button class="button-gray" onclick="insertValue('2')"><b>2</b></button>
+        <button class="button-gray" onclick="insertValue('3')"><b>3</b></button>
+        <button class="button-orange" onclick="insertValue('+')"><b>+</b></button>
+        <button class="button-orange" onclick="insertValue('-')"><b>-</b></button>
+        
+      </div>
+      <div class="button-row">
+        <button class="button-orange" onclick="insertValue('.')"><b>.</b></button>
+        <button class="button-gray" onclick="insertValue('0')"><b>0</b></button>
+        <button class="button-orange" onclick="insertValue('-')"><b>±</b></button>
+        <button class="button-orange button-equals" onclick="calculate()"><b class="font-style">ENTER</b></button>
+        
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
